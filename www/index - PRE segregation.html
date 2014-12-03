@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../gtest/www/css/index.css" media="screen, handheld">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<title>DD Scratch</title>
+</head>
+<body>
+<header>
+	<div id="ddbanner">
+	<div id="ddlogo">LOGO</div>
+        <div id="ddanchor">
+        <div id="aac">
+        <a href="#" id="navmenu">Menu</a>
+        <a href="#" id="navsearch">Search</a>
+        </div>
+        </div>
+    </div>
+</header>
+<nav>
+<div style="display: none;"  id="ddnav">
+<a href="#" class="navi">List</a>
+<a href="#" class="navi">Add</a>
+<a href="#" class="navi">Others</a>
+</div>
+</nav>
+    <form style="display: none;" id="search" action="#" method="post">
+                <fieldset>
+                    <legend>Search the Site</legend>
+                    <label for="search-site">Search the site</label>
+                    <input id="search-site" placeholder="Search Store" type="search">
+                    <input value="Search" type="submit">
+                </fieldset>
+            </form>
+
+
+<main id="thiscontent">
+DATABASE TEST WAAA<br>
+<button onClick="Initialize_Create()">CREATE</button><br><br>
+<button onClick="Initialize_Insert()">INSERT</button><br><br>
+<button onClick="Initialize_Display()">SHOW SHOW</button>
+    
+    <br><br>
+    
+    <div class="fform">
+    <form name="ff">
+    <div>
+    <label>
+    Name
+    <input type="text" name="NameX" id="NameX">
+    </label>
+    </div>
+    
+    <div>
+    <label>
+    Info
+    <input type="text" name="InfoX" id="InfoX">
+    </label>
+    </div>
+    
+    </form>
+    <button onClick="ADD();return false">MORE</button>
+    </div>
+    
+    <br><br><br>
+    <br>
+    <button onClick="more()">SHOW MORE DATA</button>
+    <button onClick="deletex()">RESET</button>
+    <div class="container">
+    <div class="inner">Data should be shown bellow here</div>
+    </div>
+    
+    
+<form>
+<textarea name="regid" id="ShowLink" rows="5" cols="50">
+</textarea>
+</form>
+
+<div>
+<h1>New Design for designer discount ???</h1>
+<p class="bb">some information here or just some menu maybe</p>
+<p class="cc">
+I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. 
+</p>
+<p class="cc">
+I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. 
+</p>
+<div id="banner">
+<button id="clickme" onClick="#">
+Click here
+</button>
+<img id="book" src="../../gtest/www/kaws.jpg" alt="banner" />
+</div>
+
+
+<p class="cc">
+I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. 
+</p>
+
+<h1>New Design for designer discount</h1>
+<p class="cc">
+I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. 
+</p>
+<p class="cc">
+I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. 
+</p>
+<p class="cc">
+I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. I wonder if this would work for now. 
+</p>
+
+</div>
+
+</main>
+
+
+<script type="text/javascript" src="../../gtest/www/js/PushNotification.js"></script>
+<script type="text/javascript" src="../../gtest/www/js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="../../gtest/www/phonegap.js"></script>
+<script type="text/javascript" src="../../gtest/www/js/index.js"></script>
+<script type="text/javascript" src="../../gtest/www/js/onlinestatus.js"></script>
+<script type="text/javascript" src="../../gtest/www/js/localconn.js"></script>
+<script type="text/javascript">
+app.initialize();
+
+
+var ADD = function(){
+//alert($("#NameX").val());
+//$("#NameX").val('TEST');// = 'TEST';
+var Dat = [];
+
+Dat['one'] = $("#NameX").val();
+Dat['two'] = $("#InfoX").val();
+
+$("#NameX").val('');
+$("#InfoX").val('');
+//$( ".container" ).append( "<div>"+ $("#NameX").val() +"</div>" );
+$( ".container" ).append( "<div>"+ Dat['one'] +"</div>" );
+$( ".container" ).append( "<div>"+ Dat['two'] +"</div>" );
+
+Initialize_Insert2(Dat)
+}
+
+
+function more()
+{
+$( ".container" ).append( "<div>yeah more and more</div>" );
+}
+
+function deletex()
+{
+$( ".container" ).html( "" );
+}
+
+$( "#navsearch" ).click(function() {
+$( "#search" ).toggle();
+});
+
+
+$( "#navmenu" ).click(function() {
+$( "#ddnav" ).toggle();
+});
+
+</script>    
+</body>
+</html>

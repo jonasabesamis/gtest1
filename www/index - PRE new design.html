@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="../../gtest/www/css/index.css" />
+<title>DD Scratch</title>
+</head>
+<body>
+<form action="http://www.siegnode.com/dddre_save.php" method="get">
+<textarea name="regid" id="ShowLink" rows="5" cols="50">
+</textarea>
+</form>
+<br>
+
+        <div class="app">
+            <h1>PhoneGap</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+
+    
+    
+    
+    <br><br><br>
+    DATABASE TEST<br>
+    <button onClick="Initialize_Create()">CREATE</button><br><br>
+    <button onClick="Initialize_Insert()">INSERT</button><br><br>
+    <button onClick="Initialize_Display()">SHOW SHOW</button>
+    
+    <br><br>
+    
+    <div class="fform">
+    <form name="ff">
+    <div>
+    <label>
+    Name
+    <input type="text" name="NameX" id="NameX">
+    </label>
+    </div>
+    
+    <div>
+    <label>
+    Info
+    <input type="text" name="InfoX" id="InfoX">
+    </label>
+    </div>
+    
+    </form>
+    <button onClick="ADD();return false">MORE</button>
+    </div>
+    
+    <br><br><br>
+    <br>
+    <button onClick="more()">SHOW MORE DATA</button>
+    <button onClick="deletex()">RESET</button>
+    <div class="container">
+    <div class="inner">Data should be shown bellow here</div>
+    </div>
+    
+<script type="text/javascript" src="../../gtest/www/js/PushNotification.js"></script>
+<script type="text/javascript" src="../../gtest/www/js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="../../gtest/www/phonegap.js"></script>
+<script type="text/javascript" src="../../gtest/www/js/index.js"></script>
+<script type="text/javascript" src="../../gtest/www/js/onlinestatus.js"></script>
+<script type="text/javascript" src="../../gtest/www/js/localconn.js"></script>
+<script type="text/javascript">
+app.initialize();
+
+
+var ADD = function(){
+//alert($("#NameX").val());
+//$("#NameX").val('TEST');// = 'TEST';
+var Dat = [];
+
+Dat['one'] = $("#NameX").val();
+Dat['two'] = $("#InfoX").val();
+
+$("#NameX").val('');
+$("#InfoX").val('');
+//$( ".container" ).append( "<div>"+ $("#NameX").val() +"</div>" );
+$( ".container" ).append( "<div>"+ Dat['one'] +"</div>" );
+$( ".container" ).append( "<div>"+ Dat['two'] +"</div>" );
+
+Initialize_Insert2(Dat)
+}
+
+
+function more()
+{
+$( ".container" ).append( "<div>yeah more and more</div>" );
+}
+
+function deletex()
+{
+$( ".container" ).html( "" );
+}
+
+</script>
+    
+</body>
+</html>

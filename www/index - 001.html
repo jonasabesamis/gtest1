@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="../../gtest/www/css/index.css" />
+        <title>DD Scratch</title>
+    </head>
+    <body>
+    <form action="http://www.siegnode.com/dddre_save.php" method="get">
+  <p>
+  <input type="button" id="BU001" value="push me!">
+  <input type="button" id="CU001" value="clear"><br>
+  <textarea name="regid" id="ShowLink" rows="5" cols="50">
+hello
+</textarea>
+  <br>
+  <input type="text" name="note" size="30">
+  <br>
+  <input type="submit" value="submit data">
+  </p>
+  <p>&nbsp;</p>
+</form><br>
+
+        <div class="app">
+            <h1>PhoneGap</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="../../gtest/www/js/PushNotification.js"></script>
+        <script type="text/javascript" src="../../gtest/www/js/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="../../gtest/www/phonegap.js"></script>
+        <script type="text/javascript" src="../../gtest/www/js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

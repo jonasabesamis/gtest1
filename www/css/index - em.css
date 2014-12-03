@@ -1,0 +1,147 @@
+#thiscontent {
+    margin: 40px auto;   /* adjustable */
+    padding: 0 .3em;	/*permanent padding*/
+    max-width: 61.75em;      /* 988px / 16px = 61.75em */
+}
+
+#ddbanner
+{
+	background-color:#f6f6f7;
+	border:0;
+	border-bottom:#aaaaad thin solid;	
+	max-width: 61.75em;
+    margin: 0px auto;   /* adjustable */	
+}
+
+h1{
+	font-family: helvetica, serif;
+    font-size: 1.7em;
+  	margin-left: 14.575%;    /* 144px / 988px = 0.14575 */
+    width: 70.85%;           /* 700px / 988px = 0.7085 */
+}
+.bb
+{
+	font-family: helvetica, serif;
+    font-size: .9em;	
+	float: right;
+    width: 14.692%;          /* 124px / 844px = 0.14692 */
+	}
+.cc{
+	font-family: helvetica, serif;
+    font-size: 1.1em;	
+	float: left;
+    width: 82.938%;          /* 700px / 844px = 0.82938 */
+}
+.thiscontent
+{
+		
+}
+#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	#banner img {
+		width: 100%;
+		}
+
+/*Desktop*/
+@media screen and (min-width: 48em) {
+#ddbanner
+{
+	height:30px;	
+}
+}
+
+/*Tablet*/
+@media screen and (min-width: 30em) and (max-width: 48em) {
+{
+	height:64px;	
+}
+
+}
+
+/*Mobile*/			
+@media screen and (max-width: 30em) {
+{
+	height:88px;	
+}
+.bb
+{
+	font-family: helvetica, serif;
+    font-size: .9em;	
+    width: 14.692%;          /* 124px / 844px = 0.14692 */
+	
+	
+	float: left;
+	clear: left;
+	margin: 0 0 10px; 
+	width: 100%;
+	}
+
+.cc{
+	font-family: helvetica, serif;
+    font-size: .9em;	
+    width: 14.692%;          /* 124px / 844px = 0.14692 */
+	
+	
+	float: left;
+	clear: left;
+	margin: 0 0 10px; 
+	width: 100%;
+}	
+
+h1{
+	font-family: helvetica, serif;
+    font-size: 1.7em;
+  	margin-left: 0;    /* 144px / 988px = 0.14575 */
+    width: 70.85%;           /* 700px / 988px = 0.7085 */
+}
+
+}
+
+
+
+.search {
+	clear: both;
+	border-top: 1px solid #333;
+	padding: 0.625em 1em;
+	position: relative;
+}
+.search label {
+	display: none;	
+}
+.search input[type=search] {
+	background: url(../../../gtest/www/css/images/icon_search.png) no-repeat 95% 50% #111;
+	color: #999;
+	border: 1px solid #333;
+	font-size: 0.8em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+	-ms-border-radius: 0.5em;
+	border-radius: 0.5em;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    padding: 0.6em 1.3em 0.6em 0.9em;
+	width: 100%;
+}
+.search input[type=search]:hover, .search input[type=search]:focus {
+	border-color: #fff;
+	color: #fff;
+}
+.search input[type=submit] {
+	background: none;
+	padding: 0;
+	border: 0;
+	width: 2em;
+	height: 2em;
+	text-indent: -99999em;
+	position: absolute;
+	top: 0;
+	right: 1em;
+	z-index: 1;
+}
+
